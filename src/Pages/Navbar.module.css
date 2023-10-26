@@ -1,0 +1,118 @@
+@import '../vars.css';
+
+.header {
+  position: sticky;
+  top:0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--clr-pri);
+  height: 85px;
+  width:100%;
+}
+.header img {
+    position: relative;
+    width:224px;
+    height:68px;
+    left:96px;
+    cursor: pointer;
+}
+.nav{
+    position: relative;
+    right:60px;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.icon{
+    display: none;
+    position: relative;
+    right:40px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.nav ul li {
+    margin-right: 50px;
+    font-family: var(--font-fam);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Responsiveness */
+@media (max-width: 575px) {
+    /* Mobile styles here */
+    .header img{
+        left:30px;
+        width: 210px;
+        height:60px;
+    }
+    .icon{
+        display: initial;
+    }
+    .nav ul{
+        flex-direction: column;
+        margin-top:230px;
+        width:100%;
+        font-size: 20px;
+        background: blue;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Tablet styles here */
+    .header img{
+        left:30px;
+        width: 210px;
+        height:60px;
+    }
+    .icon{
+        display: initial;
+    }
+    .nav{
+        position: absolute;
+        right:50px;
+        transition: 1s ease-in-out;
+    }
+    .nav ul{
+        flex-direction: column;
+        margin:350px 0 0 10px;
+        width:100%;
+        font-size: 20px;
+        background: var(--clr-pri);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .nav ul li{
+        margin-bottom: 10px;
+        padding: 10px 30px;
+    }
+    .nav ul li:hover{
+        transition: 1s;
+        width: 100%;;
+        background-color: rgba(0,0,0,0.6);
+        color:#fff;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Medium screen styles here */
+    .header img{
+        left:40px;
+    }
+    .nav ul li{
+        font-size:22px;
+        margin-right:30px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Large screen styles here */
+}
+
+@media (min-width: 1200px) {
+    /* Extra large screen styles here */
+}
+
+

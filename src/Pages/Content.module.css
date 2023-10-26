@@ -1,0 +1,21 @@
+
+.main{
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content{
+    display: flex;
+    background: blue;
+    width:90%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:35px;
+}
+.content div{
+    width:223px;
+    height:268px;
+}
